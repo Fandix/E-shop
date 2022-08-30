@@ -1,0 +1,30 @@
+<div class="login-content" fxLayout="row" fxLayoutAlign="center center">
+    <div class="login-wrop" fxLayout="row">
+        <div class="login-picture" fxFlex="50"></div>
+        <div class="login-form-content" fxFlex="50" fxLayout="column" fxLayoutAlign="center center">
+            <div class="login-form">
+                <h2 class="login-title">Wellow to E-Shop</h2>
+                <form [formGroup]="formGroup" fxLayout="column" fxLayoutGap="30px">
+                    <div fxLayout="column" fxLayoutAlign="center start" >
+                        <label class="login-label">Users name of Email</label>
+                        <mat-form-field>
+                            <input matInput type="text" formControlName="username" />
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="column" fxLayoutAlign="center start" >
+                        <label class="login-label">Password</label>
+                        <mat-form-field>
+                            <input matInput type="password" formControlName="password" />
+                        </mat-form-field>
+                    </div>
+                    <button mat-raised-button class="login-btn">Login</button>
+                </form>
+            </div>
+            <div class="login-divider">or</div>
+            <div class="login-create-account" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+                <label class="create-account-label">New User?</label>
+                <a href="/login">Craete Account</a>
+            </div>
+        </div>
+    </div>
+</div>

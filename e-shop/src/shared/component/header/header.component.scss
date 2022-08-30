@@ -1,0 +1,15 @@
+.header-content {
+    width: 100%;
+    background-color:black;
+    height: 70px;
+    .header-wrop {
+        width: 85%;
+        height: 100%;
+        margin: auto;
+        .header-home,
+        .header-login {
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

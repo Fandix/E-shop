@@ -1,0 +1,70 @@
+.login-content {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightslategray;
+    .login-wrop {
+        width: 1300px;
+        height: 700px;
+        background-color: #fff;
+        .login-picture {
+            background-image: url('https://blog.gbuy.io/wp-content/uploads/2017/06/16402828_10154831543495460_8288382199139462753_o.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .login-form {
+            width: 500px;
+            height: 500px;
+            margin-left: 60px;
+            .login-label {
+                font-size: 26px;
+                color: rgba(0, 0, 0, .4);
+                font-family: 'Cairo', cursive;
+            }
+            mat-form-field {
+                width: 400px;
+            }
+            .login-title {
+                font-size: 50px;
+                color: rgba(0, 0, 0, .4);
+                font-family: 'Qwitcher Grypen', cursive;
+            }
+            .login-btn {
+                background-color: rgba(0, 0, 0, .4);
+                height: 50px;
+                width: 200px;
+                border-radius: 30px;
+                color: white;
+                font-size: 22px;
+            }
+        }
+        .login-divider {
+            font-size: 22px;
+            color: rgba(0, 0, 0, .4);
+            position: relative;
+        }
+        .login-divider::before {
+            content: '';
+            width: 150px;
+            height: 2px;
+            background-color: rgba(0, 0, 0, .2);
+            position: absolute;
+            top: 15px;
+            left: 30px;
+        }
+        .login-divider::after {
+            content: '';
+            width: 150px;
+            height: 2px;
+            background-color: rgba(0, 0, 0, .2);
+            position: absolute;
+            top: 15px;
+            right: 30px;
+        }
+        .login-create-account {
+            margin-top: 30px;
+            .create-account-label {
+                color: rgba(0, 0, 0, .4);
+            }
+        }
+    }
+}
