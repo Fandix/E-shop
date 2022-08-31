@@ -1,0 +1,47 @@
+.register-content {
+  width: 1200px;
+  height: 700px;
+  .register-picture {
+    background-image: url("../../../../assets/image/register-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .register-form-content {
+    .register-option {
+      width: 100%;
+      .cancel-btn {
+        cursor: pointer;
+      }
+    }
+    .register-form {
+        width: 80%;
+        margin: auto;
+        .register-title {
+            font-size: 50px;
+            color: rgba(0, 0, 0, .4);
+            font-family: 'Qwitcher Grypen', cursive;
+        }
+        .register-label {
+            font-size: 26px;
+            color: rgba(0, 0, 0, .4);
+            font-family: 'Cairo', cursive;
+        }
+        mat-form-field {
+            width: 400px;
+        }
+        .register-btn {
+            background-color: rgba(0, 0, 0, .4);
+            height: 50px;
+            width: 200px;
+            border-radius: 30px;
+            color: white;
+            font-size: 22px;
+        }
+        .register-btn:hover {
+            background-color: rgba(200, 200, 200, .5);
+            color: black;
+            transition: 1.5s;
+        }
+    }
+  }
+}

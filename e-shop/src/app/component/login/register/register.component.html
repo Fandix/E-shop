@@ -1,0 +1,26 @@
+<div class="register-content">
+    <div class="register-picture" fxFlex="50"></div>
+    <div class="register-form-content" fxFlex="50" fxLayout="column" fxLayoutAlign="start center" >
+        <div class="register-option" fxLayout="row" fxLayoutAlign="end center">
+            <mat-icon class="cancel-btn" (click)="onDialogClosed()">clear</mat-icon>
+        </div>
+        <div class="register-form">
+            <h2 class="register-title">Register</h2>
+            <form [formGroup]="formGroup" fxLayout="column" fxLayoutGap="30px">
+                <div fxLayout="column" fxLayoutAlign="center start" >
+                    <label class="register-label">Email</label>
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="username" />
+                    </mat-form-field>
+                </div>
+                <div fxLayout="column" fxLayoutAlign="center start" >
+                    <label class="register-label">Password</label>
+                    <mat-form-field>
+                        <input matInput type="password" formControlName="password" />
+                    </mat-form-field>
+                </div>
+                <button mat-raised-button class="register-btn" [disabled]="formGroup.invalid">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
